@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/css_1.css">
+    <style>
+        .london{
+            border: 1px solid rgba(10, 10, 0.867);
+            padding: 20px;
+            background-color: #A3B7F3;
+            color: white;
+            margin: 20px;
+        }
+        .bd{
+            border: 1px solid rgba(10, 10, 0.867);
+            padding: 20px;
+            background-color: #F3A5A3;
+            color: white;
+            margin: 20px;
+        }
+        .ctg{
+            border: 1px solid rgba(10, 10, 0.867);
+            padding: 20px;
+            background-color: #C9F3A3;
+            color: black;
+            margin: 20px;
+        
+        }
+        div:hover{
+            background-color: #1AF893;
+        }
+        
+    </style>
+    <script>
+        function my_func(id){
+            var temp = document.getElementById(id);
+            var text = temp.querySelector("h2").innerHTML;
+            if (text === "Chattogram") {
+                window.alert("Cool " +text + " is selected");
+            }
+            else{
+                window.alert("Not Cool " +text + " is selected"); 
+            }
+            
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Reg. No.</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Raihan</td>
+            <td>2016831009</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>Shourav</td>
+            <td>2016831069</td>
+            <td>C-</td>
+        </tr>
+        <tr>
+            <td>Raisul</td>
+            <td>2016831005</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>Nihal</td>
+            <td>2018831033</td>
+            <td>A</td>
+        </tr>
+    </table>
+
+    <div class="london" id="lo" onclick="my_func(this.id)">
+        <h2>London</h2>
+        <p>British People are racist</p>
+    </div>
+
+
+    <div class="bd" id="bd" onclick="my_func(this.id)">
+        <h2>Bangladesh</h2>
+        <p>No racist lives here. Except for Siam</p>
+    </div>
+
+    <div class="london" id="ubau" onclick="my_func(this.id)">
+        <h2>Sylhot</h2>
+        <p>No Abadi are allowed here</p>
+    </div>
+    <div class="ctg" id="cool" onclick="my_func(this.id)">
+        <h2>Chattogram</h2>
+        <p>Cool people live here. Except for some imposter bhoinga</p>
+    </div>
+</body>
+
+</html>
